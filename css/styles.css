@@ -29,7 +29,7 @@ body {
   display: flex;
 }
 
-.foother-list {
+.footer-list {
   align-items: baseline;
   justify-content: space-between;
 }
@@ -122,10 +122,10 @@ body {
   justify-content: center;
 }
 
-.foother-address:hover,
-.foother-address:focus,
-.foother-tel:hover,
-.foother-tel:focus,
+.footer-address:hover,
+.footer-address:focus,
+.footer-tel:hover,
+.footer-tel:focus,
 .header-tel:hover,
 .header-link:hover,
 .header-tel:focus,
@@ -401,14 +401,14 @@ body {
   margin-left: 30px;
 }
 
-/*--------------- foother -------------*/
-.foother {
+/*--------------- footer -------------*/
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
 }
 
-.foother-logo {
+.footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -417,7 +417,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.foother-address {
+.footer-address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -428,7 +428,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foother-tel {
+.footer-tel {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -439,15 +439,15 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foother-item:not(:last-child) {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.foother-margin {
+.footer-margin {
   margin-top: 20px;
 }
 
-.foother-social-link {
+.footer-social-link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -460,8 +460,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foother-social-link:hover,
-.foother-social-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -570,7 +570,7 @@ body {
 }
 
 
-.foother-social-title {
+.footer-social-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -758,7 +758,7 @@ body {
 }
 .cb-item {
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -774,6 +774,7 @@ body {
   margin-right: 12px;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  outline: none;
 }
 
 .input-wrap {
@@ -786,6 +787,7 @@ body {
   transform: translateY(-50%);
 }
 
+.follow-input:focus, 
 .form-input:focus {
   border-color: var(--accent-color);
 }
