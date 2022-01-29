@@ -1,5 +1,5 @@
 
-.client-social-link {
+.socials-client__link {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
@@ -18,11 +18,11 @@
     }
   }
   
-  .client-social-icon {
+  .socials-client__icon {
     fill: currentColor;
   }
   
-  .client-social-item {
+  .socials-client__item {
     & + &{
       margin-left: 30px;
     }    

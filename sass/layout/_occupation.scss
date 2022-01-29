@@ -1,28 +1,29 @@
-.occupation-item {
+.occupation {
+  padding-bottom: 94px;
+}
+
+.occupation__item {
     width: 370px;
     position: relative;
     &:not(:last-child) {
       margin-right: 30px;
     }
-  }
-  .occupation-text {
-    position: absolute;
-    padding: 27px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: #ffffff;
-  }
-  
-  .occupation {
-    padding-bottom: 94px;
-  }
+}
+
+.occupation__text {
+  position: absolute;
+  padding: 27px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;  
+  color: #ffffff;
+}
+ 
   

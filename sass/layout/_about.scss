@@ -1,4 +1,8 @@
-.about-icon {
+.about {
+  display: flex;
+}
+
+.about__icon {
     width: 270px;
     height: 120px;
     background: #f5f4fa;
@@ -8,7 +12,7 @@
     margin-bottom: 30px;
   }
   
-  .about-title {
+  .about__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -18,14 +22,14 @@
     margin-bottom: 10px;
   }
       
-  .about-item {
+  .about__item {
     max-width: 270px;
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
   
-  .about-text {
+  .about__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;

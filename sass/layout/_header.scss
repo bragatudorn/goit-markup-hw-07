@@ -5,20 +5,20 @@
     border-bottom: 1px solid #ececec;
   }
   
-  .header-list {
+  .site-list {
     display: flex;
   }
   
-  .header-container {
+  .header__container {
     @extend %align-list;
     flex-wrap: wrap;
   }
   
-  .header-connect {
+  .connect {
     @extend %align-list;
     margin-left: auto;
   }
-  .header-link {
+  .site-list__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -32,11 +32,11 @@
     }
   }
   
-  .header-item:not(:last-child) {
+  .site-list__item:not(:last-child) {
     margin-right: 50px;
   }
   
-  .header-tel {
+  .connect__tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

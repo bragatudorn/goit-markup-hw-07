@@ -1,4 +1,4 @@
-.contact-tel-icon {
+.connect__tel-icon {
     fill: currentColor;
     margin-right: 10px;
     width: 10px;
@@ -6,7 +6,7 @@
     align-items: center;
   }
   
-  .contact-email-icon {
+  .connect__email-icon {
     fill: currentColor;
     margin-right: 10px;
     width: 16px;
@@ -14,8 +14,8 @@
     align-items: center;
   }
   
-  .contact-icon-item {
+  .connect__icon-item {
     @extend %align-list;
     justify-content: center;
-  }
+  } 
   

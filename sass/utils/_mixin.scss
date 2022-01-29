@@ -1,3 +1,9 @@
+
+@mixin align-item {
+    display: flex;
+    align-items: center;   
+}
+
 @mixin font($fs,$fw,$lh,$ls) {
     font-size: $fs;
     font-weight: $fw;
