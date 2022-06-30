@@ -8,8 +8,11 @@
 }
 
 .occupation__text {
-  position: absolute;
-  padding: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; 
+  height: 70px; 
   bottom: 0;
   right: 0;
   left: 0;
@@ -17,7 +20,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;  
   color: #ffffff;
