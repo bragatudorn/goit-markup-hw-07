@@ -4,6 +4,7 @@
   --primary-white-color: #ffffff;
   --discription-color: #757575;
   --font-family: 'Roboto', sans-serif;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -35,6 +36,10 @@
   display: flex;
 }
 
+.site-nav {
+  margin-left: 93px;
+}
+
 .header__container {
   flex-wrap: wrap;
 }
@@ -49,8 +54,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
 .site-list__link:hover, .site-list__link:focus {
@@ -67,8 +71,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--discription-color);
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
 .connect__tel:hover, .connect__tel:focus {
@@ -106,8 +109,7 @@
   margin: 0 auto;
   border-width: 0;
   border-radius: 4px;
-  transition: background-color 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .hero-btn:hover {
@@ -159,15 +161,11 @@
 }
 
 .about__text {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--discription-color);
-}
-
-.occupation {
-  padding-bottom: 94px;
 }
 
 .occupation__item {
@@ -205,8 +203,7 @@
   justify-content: center;
   align-items: center;
   color: #afb1b8;
-  transition: border-color 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .socials-client__link:hover, .socials-client__link:focus {
@@ -234,8 +231,7 @@
 .team-item__member-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
@@ -244,8 +240,7 @@
 
 .team-item__description {
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--discription-color);
@@ -281,8 +276,7 @@
   align-items: center;
   border-radius: 50%;
   color: #afb1b8;
-  transition: background-color 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 /*
@@ -313,13 +307,11 @@
 
 .footer-address {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
 .footer-address:hover, .footer-address:focus {
@@ -328,13 +320,11 @@
 
 .footer-tel {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
 .footer-tel:hover, .footer-tel:focus {
@@ -356,8 +346,7 @@
   justify-content: center;
   border-radius: 50%;
   color: var(--primary-white-color);
-  transition: background-color 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .footer-social-link:hover, .footer-social-link:focus {
@@ -392,15 +381,14 @@
 
 .portofolio-pad {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portofolio-item {
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   width: 370px;
-  transition: box-shadow 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic), color 250ms var(--cubic);
   position: relative;
 }
 
@@ -412,11 +400,18 @@
   margin-bottom: 30px;
 }
 
-.portofolio-item:hover, .portofolio-item:focus {
+.portofolio-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portofolio-link:hover, .portofolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portofolio-item:hover .portofolio-img-text {
+.portofolio-link:hover,
+.portofolio-link:focus .portofolio-img-text {
   transform: translateY(0);
 }
 
@@ -439,8 +434,7 @@
   background: rgba(33, 150, 243, 0.9);
   color: var(--primary-white-color);
   transform: translateY(100%);
-  transition: transform 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
 }
 
 .portofolio-description {
@@ -463,9 +457,7 @@
   color: var(--body-text-color);
   cursor: pointer;
   padding: 6px 22px;
-  margin-left: 8px;
-  transition: box-shadow 250ms linear, background-color 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic), background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .portofolio-btn:hover, .portofolio-btn:focus {
@@ -475,9 +467,13 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .ul-btn {
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 p,
@@ -521,6 +517,10 @@ body {
   padding-bottom: 94px;
 }
 
+.occupation {
+  padding-top: 0px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -562,8 +562,7 @@ body {
   margin: 0 auto;
   border-width: 0;
   border-radius: 4px;
-  transition: box-shadow 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -716,7 +715,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
-  margin-right: 93px;
 }
 
 .footer__logo {
@@ -801,8 +799,7 @@ body {
   right: 8px;
   color: #000000;
   padding: 0;
-  transition: background-color 250ms linear, color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   fill: currentColor;
 }
 
